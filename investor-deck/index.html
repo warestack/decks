@@ -272,6 +272,17 @@
  .slide:last-child{break-after:auto;page-break-after:auto}
  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
 }
+
+/* Shared reading rhythm: align related rows without centering dense information. */
+.slide .src{color:#6D727F}
+.slide .src a{color:inherit!important}
+.slide[data-label="Competition"] .tbl .tr{align-items:start}
+.slide[data-label="Ask"] .body{margin-top:30px;gap:20px}
+.slide[data-label="Pricing"] .body{gap:24px}
+.slide[data-label="Pricing"] .body>.grid:first-child>.cell>.lab{
+  min-height:26px;display:flex;align-items:center
+}
+.slide[data-label="Product"] .shot-cap{min-height:112px}
 </style></meta></head>
 <body>
 <div id="app">
@@ -451,7 +462,7 @@
 <div class="src">Research programme</div>
 </div>
 </div>
-<div class="grid" style="grid-template-columns:1.45fr 1fr;background-color:#EEEEEE">
+<div class="grid" style="grid-template-columns:1fr;background-color:#EEEEEE">
 <div class="cell wash" style="background-color:#EEEEEE">
 <div class="lab">Enterprise unlock</div>
 <div class="kicker">SOC 2 Type II process in progress; observation targeted to complete mid-Q4 2026.</div>
@@ -493,7 +504,7 @@
 <div class="src">≈2–6% of the modeled SAM</div>
 </div>
 </div>
-<div class="grid" style="grid-template-columns:1.1fr 1fr 1fr">
+<div class="grid" style="grid-template-columns:repeat(3,1fr)">
 <div class="cell wash">
 <div class="lab">Hard anchor</div>
 <div class="kicker"><b>4M+ GitHub organizations.</b><br/>The model counts only a small commercial subset.</div>
@@ -522,7 +533,7 @@
 </div>
 <div class="body">
 <div class="tbl" style="flex:1">
-<div class="th" style="display:grid;grid-template-columns:250px 1.12fr 1.2fr;gap:26px"><span>Category</span><span>Overlap / focus</span><span>Warestack focus / implication</span></div>
+<div class="th" style="display:grid;grid-template-columns:250px 1.12fr 1.2fr;gap:28px"><span>Category</span><span>Overlap / focus</span><span>Warestack focus / implication</span></div>
 <div class="tr" style="grid-template-columns:250px 1.12fr 1.2fr">
 <span class="c b">CodeRabbit / Qodo</span>
 <span class="c q">AI review, PR analysis and configurable code-review checks</span>
@@ -589,23 +600,23 @@
 </div>
 </div>
 <div class="grid" style="grid-template-columns:repeat(3,1fr);flex:1">
-<div class="cell lg" style="padding:22px 24px">
+<div class="cell lg" style="padding:28px 32px;justify-content:center">
 <div class="lab">01 · Qualify</div>
 <div class="fig" style="font-size:44px;line-height:1.08">Identify</div>
 <p style="font-size:19px;line-height:1.5">Pick a recurring problem: missed approvals, outdated review evidence or slow investigations.</p>
-<div class="src" style="margin-top:auto">Named buyer · concrete repository workflow</div>
+<div class="src" style="margin-top:8px">Named buyer · concrete repository workflow</div>
 </div>
-<div class="cell lg wash" style="padding:22px 24px">
+<div class="cell lg wash" style="padding:28px 32px;justify-content:center">
 <div class="lab">02 · Evaluate</div>
 <div class="fig" style="font-size:44px;line-height:1.08">Compare</div>
 <p style="font-size:19px;line-height:1.5">Measure correct answers, evidence freshness, follow-up and operating effort against the existing alternative.</p>
-<div class="src" style="margin-top:auto">Shared baseline · acceptance criteria</div>
+<div class="src" style="margin-top:8px">Shared baseline · acceptance criteria</div>
 </div>
-<div class="cell lg" style="padding:22px 24px">
+<div class="cell lg" style="padding:28px 32px;justify-content:center">
 <div class="lab">03 · Expand</div>
 <div class="fig" style="font-size:44px;line-height:1.08">Adopt</div>
 <p style="font-size:19px;line-height:1.5">Grow across repositories and teams only if Warestack removes enough ongoing work to justify buying.</p>
-<div class="src" style="margin-top:auto">Measured value · broader coverage</div>
+<div class="src" style="margin-top:8px">Measured value · broader coverage</div>
 </div>
 </div>
 </div>
@@ -623,15 +634,15 @@
 <div class="body" style="margin-top:20px;gap:16px">
 <div class="grid" style="grid-template-columns:1fr 1fr;flex:1"><div class="cell lg" style="padding:16px 38px;gap:8px">
 <div class="ppl"><span class="av">DK</span></div>
-<div style="font-size:34px;font-weight:600">Dr Dimitris Kargatzis</div>
+<div style="font-size:30px;font-weight:600">Dr Dimitris Kargatzis</div>
 <div class="lab">Founder · technical lead</div>
-<p style="font-size:22px">PhD in Computer Science; DevOps/platform engineering; built Warestack’s delivery-standard checks and integrations.</p>
+<p style="font-size:20px;line-height:1.4">PhD in Computer Science; DevOps/platform engineering; built Warestack’s delivery-standard checks and integrations.</p>
 <div class="src" style="margin-top:auto">Product + technical founder</div>
-</div><div class="cell lg wash" style="padding:16px 38px;gap:8px"><div class="ppl"><span class="av b" style="margin-left:0">SS</span></div><div style="font-size:34px;font-weight:600">Dr Stelios Sotiriadis</div><div class="lab">R&amp;D</div><p style="font-size:22px">Professor, Birkbeck, University of London (BBK) · <a href="https://scholar.google.com/citations?user=hLqLr1IAAAAJ&amp;hl=en" style="color:inherit;text-decoration:underline;text-underline-offset:3px">2.4K+ citations</a></p><div class="src" style="margin-top:auto">Research + leadership</div></div><div class="cell wash" style="padding:16px 38px;gap:8px"><div class="ppl"><span class="av">AN</span></div><div style="font-size:30px;font-weight:600">Dr Anastasios Noulas</div><div class="lab">Chief AI Officer</div><p style="font-size:20px;line-height:1.4">Cambridge Computer Science PhD; former NYU Data Science faculty and Head of Data Science at Firefly, where his team contributed to multi-million-dollar revenue impact.</p><p style="font-size:20px;line-height:1.4">Former Research &amp; AI Strategy Director at Vico; 50+ publications, 6K+ citations and a US patent.</p></div><div class="cell lg wash" style="padding:16px 38px;gap:8px">
+</div><div class="cell lg wash" style="padding:16px 38px;gap:8px"><div class="ppl"><span class="av b" style="margin-left:0">SS</span></div><div style="font-size:30px;font-weight:600">Dr Stelios Sotiriadis</div><div class="lab">R&amp;D</div><p style="font-size:20px;line-height:1.4">Professor, Birkbeck, University of London (BBK) · <a href="https://scholar.google.com/citations?user=hLqLr1IAAAAJ&amp;hl=en" style="color:inherit;text-decoration:underline;text-underline-offset:3px">2.4K+ citations</a></p><div class="src" style="margin-top:auto">Research + leadership</div></div><div class="cell wash" style="padding:16px 38px;gap:8px"><div class="ppl"><span class="av">AN</span></div><div style="font-size:30px;font-weight:600">Dr Anastasios Noulas</div><div class="lab">Chief AI Officer</div><p style="font-size:20px;line-height:1.4">Cambridge Computer Science PhD; former NYU Data Science faculty and Head of Data Science at Firefly, where his team contributed to multi-million-dollar revenue impact.</p><p style="font-size:20px;line-height:1.4">Former Research &amp; AI Strategy Director at Vico; 50+ publications, 6K+ citations and a US patent.</p></div><div class="cell lg wash" style="padding:16px 38px;gap:8px">
 <div class="ppl"><span class="av b" style="margin-left:0">DR</span></div>
-<div style="font-size:34px;font-weight:600">Devanand Rajegowda</div>
+<div style="font-size:30px;font-weight:600">Devanand Rajegowda</div>
 <div class="lab">Product</div>
-<p style="font-size:22px">Former product engineering leader at Nillion; full-time operator across developer products.</p>
+<p style="font-size:20px;line-height:1.4">Former product engineering leader at Nillion; full-time operator across developer products.</p>
 <div class="src" style="margin-top:auto">Product + engineering operator</div>
 </div></div>
 <div class="grid" style="grid-template-columns:1.25fr 1fr">
@@ -741,7 +752,7 @@
     </div>
 </div>
 </div>
-<div class="grid" style="grid-template-columns:1.25fr 1fr">
+<div class="grid" style="grid-template-columns:1.22fr 1fr">
 <div class="cell wash">
 <div class="lab">GTM model</div>
 <div class="kicker">Land like a developer tool. Expand through trusted delivery.</div>
